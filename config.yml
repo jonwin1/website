@@ -1,0 +1,56 @@
+baseURL: 'https://jonwin.se/'
+languageCode: en-us
+title: Jonwin
+paginate: 5
+theme: PaperMod
+
+params:
+  homeInfoParams:
+    Title: "Hey, I’m Jonatan \U0001F44B"
+    Content: I am a 
+  socialIcons:
+    - name: github
+      url: https://github.com/jonwin1
+
+  assets:
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon-16x16.png"
+    favicon32x32: "/favicon-32x32.png"
+    apple_touch_icon: "/apple-touch-icon.png"
+    safari_pinned_tab: "/safari-pinned-tab.svg"
+
+  defaultTheme: dark
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+
+  editPost:
+    URL: "https://github.com/jonwin1/my-website/content"
+    Text: "Suggest Changes"
+    appendFilePath: true
+
+menu:
+  main:
+  - identifier: home
+    name: Home
+    url: /
+    weight: 10
+  - identifier: archive
+    name: Archive
+    url: /archive/
+    weight: 20
+  - identifier: search
+    name: Search
+    url: /search/
+    weight: 30
+  - identifier: Github
+    name: Github
+    url: https://github.com/jonwin1
+    weight: 40
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
