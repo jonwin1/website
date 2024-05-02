@@ -6,8 +6,8 @@ theme: PaperMod
 
 params:
   homeInfoParams:
-    Title: "Hey, I’m Jonatan \U0001F44B"
-    Content: I am a 
+    Title: "Hey, I’m Jonatan Wincent"
+    Content: I am a second year student at the Masters of Science Programme in Computing Science and Engineering at Umeå University.
   socialIcons:
     - name: github
       url: https://github.com/jonwin1
