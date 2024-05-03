@@ -70,7 +70,7 @@ params:
     safari_pinned_tab: "/safari-pinned-tab.svg"
 
   editPost:
-    URL: "https://github.com/jonwin1/website/content"
+    URL: "https://github.com/jonwin1/website/blob/main/content"
     Text: "Suggest Changes"
     appendFilePath: true
 
