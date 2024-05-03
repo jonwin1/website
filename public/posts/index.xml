@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on Jonwin</title>
+    <title>Posts on jonwin.se</title>
     <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Jonwin</description>
+    <description>Recent content in Posts on jonwin.se</description>
+    <image>
+      <title>jonwin.se</title>
+      <url>http://localhost:1313/favicon.ico</url>
+      <link>http://localhost:1313/favicon.ico</link>
+    </image>
     <generator>Hugo -- 0.125.4</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 May 2024 17:29:37 +0200</lastBuildDate>

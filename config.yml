@@ -1,15 +1,43 @@
 baseURL: 'https://jonwin.se/'
+title: jonwin.se
 languageCode: en-us
-title: Jonwin
 paginate: 5
 theme: PaperMod
 
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+
 params:
+  defaultTheme: dark
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+  TocOpen: true
+
+  images: ["favicon.ico"]
+  assets:
+    disableHLJS: true
+
   homeInfoParams:
     Title: "Hey, I’m Jonatan Wincent"
-    Content: I am a second year student at the Masters of Science Programme in Computing Science and Engineering at Umeå University.
+    Content: >
+      I am a second year student at the Masters of Science Programme in Computing 
+      Science and Engineering at Umeå University. 
+
   socialIcons:
     - name: github
+      title: My Github Profile
       url: https://github.com/jonwin1
 
   assets:
@@ -19,16 +47,13 @@ params:
     apple_touch_icon: "/apple-touch-icon.png"
     safari_pinned_tab: "/safari-pinned-tab.svg"
 
-  defaultTheme: dark
-  ShowReadingTime: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
-
   editPost:
-    URL: "https://github.com/jonwin1/my-website/content"
+    URL: "https://github.com/jonwin1/website/content"
     Text: "Suggest Changes"
     appendFilePath: true
+
+  label:
+    icon: /favicon.ico
 
 menu:
   main:
@@ -36,21 +61,43 @@ menu:
     name: Home
     url: /
     weight: 10
-  - identifier: archive
-    name: Archive
-    url: /archive/
-    weight: 20
   - identifier: search
     name: Search
     url: /search/
+    weight: 20
+  - identifier: pictures
+    name: Pictures
+    url: /pictures/
     weight: 30
+  - identifier: archive
+    name: Archive
+    url: /archive/
+    weight: 40
   - identifier: Github
     name: Github
     url: https://github.com/jonwin1
-    weight: 40
+    weight: 50
 
 outputs:
   home:
     - HTML
     - RSS
     - JSON
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    anchorLineNos: false
+    codeFences: true
+    guessSyntax: true
+    hl_Lines: ""
+    hl_inline: false
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: true
+    noClasses: false
+    noHl: false
+    tabWidth: 4
