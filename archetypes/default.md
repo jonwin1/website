@@ -6,5 +6,4 @@ draft = true
     image = ""
     alt = ""
     caption = ""
-tags = []
 +++

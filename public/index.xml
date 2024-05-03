@@ -11,14 +11,17 @@
     </image>
     <generator>Hugo -- 0.125.4</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Jun 2024 16:27:52 +0200</lastBuildDate>
+    <lastBuildDate>Fri, 03 May 2024 16:53:12 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>This Website</title>
       <link>http://localhost:1313/posts/this-website/</link>
       <pubDate>Fri, 03 May 2024 16:27:52 +0200</pubDate>
       <guid>http://localhost:1313/posts/this-website/</guid>
-      <description>On this website I intend to document different projects that I work on and share my thoughts about them. I will also post images that I take on the pictures page.</description>
+      <description>Introduction I created this website to have a single place to document all my projects and share them.
+My customisations Theme https://github.com/adityatelange/hugo-PaperMod https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite https://adityatelange.github.io/hugo-PaperMod/
+Modified date https://www.jacksonlucky.net/posts/use-lastmod-with-papermod/
+How to create your own website </description>
     </item>
     <item>
       <title>Pictures</title>
