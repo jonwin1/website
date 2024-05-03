@@ -2,7 +2,6 @@
 title = 'Pictures'
 date = 2024-05-03T11:26:20+02:00
 lastmod = 2024-05-03T11:26:20+02:00
-draft = true
 +++
 
 # 2024

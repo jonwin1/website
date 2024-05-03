@@ -21,19 +21,5 @@
       <description>2024 Rally Sweden Jumping into the Red Barn Arena
 My Car My car, a BMW E46 330xi.</description>
     </item>
-    <item>
-      <title>Another Post</title>
-      <link>http://localhost:1313/posts/another-post/</link>
-      <pubDate>Thu, 02 May 2024 17:29:37 +0200</pubDate>
-      <guid>http://localhost:1313/posts/another-post/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>My First Post</title>
-      <link>http://localhost:1313/posts/my-first-post/</link>
-      <pubDate>Thu, 02 May 2024 16:48:26 +0200</pubDate>
-      <guid>http://localhost:1313/posts/my-first-post/</guid>
-      <description>first post</description>
-    </item>
   </channel>
 </rss>
