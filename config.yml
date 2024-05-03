@@ -14,6 +14,7 @@ minify:
   disableXML: true
 
 params:
+  env: production
   defaultTheme: dark
   ShowReadingTime: true
   ShowPostNavLinks: true
@@ -25,20 +26,39 @@ params:
   ShowToc: true
   TocOpen: true
 
-  images: ["favicon.ico"]
+  images: ["round_logo.png"]
   assets:
     disableHLJS: true
 
   homeInfoParams:
     Title: "Hey, I’m Jonatan Wincent"
     Content: >
-      I am a second year student at the Masters of Science Programme in Computing 
-      Science and Engineering at Umeå University. 
+      `$ whoami`
+      <br>
+      I am a second year student at the Masters of Science Programme in
+      Computing Science and Engineering at Umeå University. Some of my biggest
+      interests are software development, Linux, motorcycling, snowmobiling
+      and learning new things.
+      <br>
+      <br>
+      `$ man jonwin.se`
+      <br>
+      On this website I intend to document different projects that I work on and 
+      share my thoughts about them. I will also post images that I take on 
+      the [pictures](/pictures) page.
+      <br>
+      <br>
+      Visit my [GitHub](https://github.com/jonwin1) profile to view the source code for
+      this page and all of my other projects.
+
 
   socialIcons:
     - name: github
-      title: My Github Profile
+      title: My GitHub Profile
       url: https://github.com/jonwin1
+    - name: email
+      title: Contact me
+      url: mailto:jonatan.wincent@jonwin.se
 
   assets:
     favicon: "/favicon.ico"
@@ -53,7 +73,7 @@ params:
     appendFilePath: true
 
   label:
-    icon: /favicon.ico
+    icon: /round_logo.png
 
 menu:
   main:
@@ -73,8 +93,8 @@ menu:
     name: Archive
     url: /archive/
     weight: 40
-  - identifier: Github
-    name: Github
+  - identifier: github
+    name: GitHub
     url: https://github.com/jonwin1
     weight: 50
 
@@ -89,15 +109,9 @@ markup:
     renderer:
       unsafe: true
   highlight:
-    anchorLineNos: false
+    noClasses: false
+    anchorLineNos: true
     codeFences: true
     guessSyntax: true
-    hl_Lines: ""
-    hl_inline: false
-    lineAnchors: ""
-    lineNoStart: 1
-    lineNos: false
-    lineNumbersInTable: true
-    noClasses: false
-    noHl: false
+    lineNos: true
     tabWidth: 4
