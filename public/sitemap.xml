@@ -3,16 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2024-05-03T11:26:20+02:00</lastmod>
+    <lastmod>2024-06-03T16:27:52+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2024-06-03T16:27:52+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/this-website/</loc>
+    <lastmod>2024-06-03T16:27:52+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/pictures/</loc>
-    <lastmod>2024-05-03T11:26:20+02:00</lastmod>
+    <lastmod>2024-05-03T12:23:37+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/archive/</loc>
+    <lastmod>2024-05-02T18:01:07+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/search/</loc>
+    <lastmod>2024-05-02T18:01:07+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url>

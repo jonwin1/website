@@ -6,6 +6,7 @@ theme: PaperMod
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
+enableGitInfo: true
 buildDrafts: false
 buildFuture: false
 buildExpired: false
@@ -27,6 +28,7 @@ params:
   TocOpen: true
 
   images: ["round_logo.png"]
+  dateFormat: "2006-01-02"
   assets:
     disableHLJS: true
 
