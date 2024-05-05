@@ -1,12 +1,12 @@
-+++
-title = 'This Website'
-date = 2024-05-03T16:27:52+02:00
-draft = false
-[cover]
-    image = ""
-    alt = ""
-    caption = ""
-+++
+---
+cover:
+  alt: ""
+  caption: ""
+  image: ""
+date: "2024-05-03T16:27:52+02:00"
+draft: false
+title: This Website
+---
 
 I created this website to have a single place to document all my projects and
 share them. It will also serve as a kind of portfolio that shows what things I have
