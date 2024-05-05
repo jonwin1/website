@@ -18,10 +18,8 @@
       <link>http://localhost:1313/posts/this-website/</link>
       <pubDate>Fri, 03 May 2024 16:27:52 +0200</pubDate>
       <guid>http://localhost:1313/posts/this-website/</guid>
-      <description>Introduction I created this website to have a single place to document all my projects and share them.
-My customisations Theme https://github.com/adityatelange/hugo-PaperMod https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite https://adityatelange.github.io/hugo-PaperMod/
-Modified date https://www.jacksonlucky.net/posts/use-lastmod-with-papermod/
-How to create your own website </description>
+      <description>I created this website to have a single place to document all my projects and share them. It will also serve as a kind of portfolio that shows what things I have worked on and learned.
+This Website This website was build with Hugo which is a open-source static site generator, Hugo allows you to generate posts like this one from markdown files. I use the PaperMod theme for my site, it is a clean and simple theme with many useful features.</description>
     </item>
   </channel>
 </rss>

@@ -121,5 +121,4 @@ markup:
     anchorLineNos: true
     codeFences: true
     guessSyntax: true
-    lineNos: true
     tabWidth: 4
