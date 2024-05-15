@@ -11,17 +11,17 @@
     </image>
     <generator>Hugo -- 0.125.4</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 08 May 2024 16:57:11 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 08 May 2024 17:59:42 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>St (simple terminal)</title>
       <link>http://localhost:1313/posts/st/</link>
-      <pubDate>Wed, 08 May 2024 16:57:11 +0200</pubDate>
+      <pubDate>Wed, 15 May 2024 19:06:32 +0200</pubDate>
       <guid>http://localhost:1313/posts/st/</guid>
       <description>&amp;ldquo;st is a simple terminal implementation for X&amp;rdquo; - suckless.org.
 This is my configuration of the suckless terminal st. I have installed a few different patches and made some configuration changes to improve the usability and look of the terminal.
 Try My Config To try my configuration on any system with Nix installed run the following:
-nix run github:jonwin1/st-jonwin Installing NixOS Add the repository as an input in your flake.nix:</description>
+nix run github:jonwin1/st-jonwin Patches Srollback: Allow scrolling back through the terminal output using keybinds or the mouse wheel.</description>
     </item>
     <item>
       <title>Keyboard Layouts</title>
