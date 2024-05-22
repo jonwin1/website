@@ -95,9 +95,9 @@ keys
 
 #### Applications
 
-- `Super + p`: Spawn dmenu
-- `Super + Ret`: Spawn st
-- `Super + s`: Spawn scratchpad
+- `Super + d`: Spawn dmenu
+- `Super + s`: Spawn st
+- `Super + p`: Spawn scratchpad
 - `Super + b`: Spawn Bitwarden-menu
 - `Super + w`: Spawn qutebrowser
 
