@@ -11,10 +11,17 @@ cover:
 "dwm is an extremely fast, small, and dynamic window manager for X." -
 [suckless.org](https://dwm.suckless.org/)
 
-This post talks about my dwm configuration and the changes I have made to it. 
-
+This post talks about my dwm configuration and the changes I have made to it. I
+have installed quite a few patches and made some modifications of my own, I
+have also added a flake.nix to make installation on NixOS really simple. You
+can view the source code in my GitHub repository
+[here](https://github.com/jonwin1/dwm-jonwin).
 
 ## Patches
+
+Below is a list of all the patches I have installed with a short explanation of
+each patch, press the links to view the patches on
+[suckless.org](https://dwm.suckless.org/patches/).
 
 - **[alwayscenter](https://dwm.suckless.org/patches/alwayscenter/):** "All
 floating windows are centered, like the center patch, but without a rule."
@@ -72,13 +79,81 @@ makes better use of screen space on ultra wide monitors."
 - **[viewontag](https://dwm.suckless.org/patches/viewontag/):** "Follow a
 window to the tag it is being moved to."
 
+### Other Changes
+
+font
+
+color
+
+rules
+
+XF86XK
+
+keys
+
 ## Keybinds
+
+#### Applications
+
+- `Super + p`: Spawn dmenu
+- `Super + Ret`: Spawn st
+- `Super + s`: Spawn scratchpad
+- `Super + b`: Spawn Bitwarden-menu
+- `Super + w`: Spawn qutebrowser
+
+#### Clients and Areas
+
+- `Super + j`: Focus next client
+- `Super + k`: Focus previous client
+- `Super + i`: Increase number of master clients
+- `Super + d`: Decrease number of master clients
+- `Super + h`: Decrease master area size
+- `Super + l`: Increase master area size
+- `Super + Shift + h`: Increase client weight
+- `Super + Shift + l`: Decrease client weight
+- `Super + Shift + o`: Reset client weight
+- `Super + Shift + j`: Swap client with next client
+- `Super + Shift + k`: Swap client with previous client
+- `Super + Shift + Space`: Toggle client to floating
+- `Super + Shift + Return`: Zoom client to master area
+- `Super + q`: Kill client
+
+#### Layout
+
+- `Super + t`: Set tilewide layout
+- `Super + Shift + t`: Set tile layout
+- `Super + f`: Set floating layout
+- `Super + m`: Set monocle layout
+- `Super + Space`: Toggle previous layout
+- `Super + Shift + b`: Toggle the bar
+
+#### Tags and Monitors
+
+- `Super + Tab`: View previous tag
+- `Super + 0`: View all tags
+- `Super + Shift + 0`: Move client to all tags
+- `Super + ,`: Focus previous monitor
+- `Super + .`: Focus next monitor
+- `Super + Shift ,`: Move client to previous monitor
+- `Super + Shift .`: Move client to next monitor
+
+- `Super + 1-9`: View tag 1-9
+- `Super + Shift + 1-9`: Send client to tag 1-9
+- `Super + Control + 1-9`: Add tag 1-9 to view
+- `Super + Shift + Control + 1-9`: Add client to tag 1-9
+
+#### Other
+
+- `Super + Shift + q`: Open exit menu
 
 ## Install
 
 ### Dependencies
 
-In order to build dwm you need the Xlib header files.
+- libX11
+- libXinerama
+- libXft
+- fira-code-nerdfont
 
 ### NixOS
 

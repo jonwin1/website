@@ -8,10 +8,8 @@
 <title>Dwm (dynamic window manager) | jonwin.se</title>
 <meta name="keywords" content="">
 <meta name="description" content="&ldquo;dwm is an extremely fast, small, and dynamic window manager for X.&rdquo; - suckless.org
-This post talks about my dwm configuration and the changes I have made to it.
-Patches alwayscenter: &ldquo;All floating windows are centered, like the center patch, but without a rule.&rdquo;
-attachbottom: &ldquo;New clients attach at the bottom of the stack instead of the top.&rdquo;
-center first window: Adds rule to center window if it is the only client in a tag.">
+This post talks about my dwm configuration and the changes I have made to it. I have installed quite a few patches and made some modifications of my own, I have also added a flake.nix to make installation on NixOS really simple. You can view the source code in my GitHub repository here.
+Patches Below is a list of all the patches I have installed with a short explanation of each patch, press the links to view the patches on suckless.">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/dwm/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
@@ -36,24 +34,20 @@ center first window: Adds rule to center window if it is the only client in a ta
 
 <meta property="og:title" content="Dwm (dynamic window manager)" />
 <meta property="og:description" content="&ldquo;dwm is an extremely fast, small, and dynamic window manager for X.&rdquo; - suckless.org
-This post talks about my dwm configuration and the changes I have made to it.
-Patches alwayscenter: &ldquo;All floating windows are centered, like the center patch, but without a rule.&rdquo;
-attachbottom: &ldquo;New clients attach at the bottom of the stack instead of the top.&rdquo;
-center first window: Adds rule to center window if it is the only client in a tag." />
+This post talks about my dwm configuration and the changes I have made to it. I have installed quite a few patches and made some modifications of my own, I have also added a flake.nix to make installation on NixOS really simple. You can view the source code in my GitHub repository here.
+Patches Below is a list of all the patches I have installed with a short explanation of each patch, press the links to view the patches on suckless." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/dwm/" />
 <meta property="og:image" content="http://localhost:1313/dwm.png" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2024-05-20T14:59:07+02:00" />
-<meta property="article:modified_time" content="2024-05-20T14:59:07+02:00" />
+<meta property="article:modified_time" content="2024-05-21T19:34:25+02:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/dwm.png" />
 <meta name="twitter:title" content="Dwm (dynamic window manager)"/>
 <meta name="twitter:description" content="&ldquo;dwm is an extremely fast, small, and dynamic window manager for X.&rdquo; - suckless.org
-This post talks about my dwm configuration and the changes I have made to it.
-Patches alwayscenter: &ldquo;All floating windows are centered, like the center patch, but without a rule.&rdquo;
-attachbottom: &ldquo;New clients attach at the bottom of the stack instead of the top.&rdquo;
-center first window: Adds rule to center window if it is the only client in a tag."/>
+This post talks about my dwm configuration and the changes I have made to it. I have installed quite a few patches and made some modifications of my own, I have also added a flake.nix to make installation on NixOS really simple. You can view the source code in my GitHub repository here.
+Patches Below is a list of all the patches I have installed with a short explanation of each patch, press the links to view the patches on suckless."/>
 
 
 <script type="application/ld+json">
@@ -82,15 +76,15 @@ center first window: Adds rule to center window if it is the only client in a ta
   "@type": "BlogPosting",
   "headline": "Dwm (dynamic window manager)",
   "name": "Dwm (dynamic window manager)",
-  "description": "\u0026ldquo;dwm is an extremely fast, small, and dynamic window manager for X.\u0026rdquo; - suckless.org\nThis post talks about my dwm configuration and the changes I have made to it.\nPatches alwayscenter: \u0026ldquo;All floating windows are centered, like the center patch, but without a rule.\u0026rdquo;\nattachbottom: \u0026ldquo;New clients attach at the bottom of the stack instead of the top.\u0026rdquo;\ncenter first window: Adds rule to center window if it is the only client in a tag.",
+  "description": "\u0026ldquo;dwm is an extremely fast, small, and dynamic window manager for X.\u0026rdquo; - suckless.org\nThis post talks about my dwm configuration and the changes I have made to it. I have installed quite a few patches and made some modifications of my own, I have also added a flake.nix to make installation on NixOS really simple. You can view the source code in my GitHub repository here.\nPatches Below is a list of all the patches I have installed with a short explanation of each patch, press the links to view the patches on suckless.",
   "keywords": [
     
   ],
-  "articleBody": "“dwm is an extremely fast, small, and dynamic window manager for X.” - suckless.org\nThis post talks about my dwm configuration and the changes I have made to it.\nPatches alwayscenter: “All floating windows are centered, like the center patch, but without a rule.”\nattachbottom: “New clients attach at the bottom of the stack instead of the top.”\ncenter first window: Adds rule to center window if it is the only client in a tag.\ncfacts: Provides the ability to assign weights to clients to modify how the space in the stacks is distributed between the clients.\ncursorwarp: “Warp the cursor to the center of the target window when switching between them with focusstack(), focusmon(), manage() and unmanage()”\nexitmenu: “Simple exit menu for dwm.”\nhide vacant tags: “This patch prevents dwm from drawing tags with no clients (i.e. vacant) on the bar.”\nmovestack: “This plugin allows you to move clients around in the stack and swap them with the master. It emulates the behavior off mod+shift+j and mod+shift+k in Xmonad.”\nresizecorners: “By default, windows can only be resized from the bottom right corner. With this Patch, the mouse is warped to the nearest corner and you resize it from there.”\nrestartsig: Allows restarting of dwm.\nscratchpad: “The scratchpad patch allows you to spawn or restore a floating terminal window. It is usually useful to have one to do some short typing.”\nsplitstatus: “This patch replaces the standard statusbar items (window name to the right of the tags, and status on the right) with two status items: one in the centre, and one on the right.”\nswallow: Terminals swallow windows opened by child processes.\ntilewide: “The tilewide layout is a variant of the standard tile layout. Windows added to the master area will be positioned side by side, instead of one on top of the other. This makes better use of screen space on ultra wide monitors.”\nviewontag: “Follow a window to the tag it is being moved to.”\nKeybinds Install Dependencies In order to build dwm you need the Xlib header files.\nNixOS Add this repo as a flake input in your flake.nix:\ninputs = { dwm = { url = \"github:jonwin1/dwm-jonwin\"; inputs.nixpkgs.follows = \"nixpkgs\"; }; }; Then add the following to your configuration.nix to enable dwm:\nservices = { xserver = { windowManager.dwm = { enable = true; package = inputs.dwm.packages.\"x86_64-linux\".default; }; }; }; Running dwm Other Distros Edit config.mk to match your local setup (dwm is installed into the /usr/local namespace by default).\nAfterwards enter the following command to build and install dwm (if necessary as root):\nmake clean install Running dwm Add the following line to your .xinitrc to start dwm using startx:\nexec dwm In order to connect dwm to a specific display, make sure that the DISPLAY environment variable is set correctly, e.g.:\nDISPLAY=foo.bar:1 exec dwm (This will start dwm on display :1 of the host foo.bar.)\nIn order to display status info in the bar, you can do something like this in your .xinitrc:\nwhile xsetroot -name \"`date` `uptime | sed 's/.*,//'`\" do sleep 1 done \u0026 exec dwm ",
-  "wordCount" : "515",
+  "articleBody": "“dwm is an extremely fast, small, and dynamic window manager for X.” - suckless.org\nThis post talks about my dwm configuration and the changes I have made to it. I have installed quite a few patches and made some modifications of my own, I have also added a flake.nix to make installation on NixOS really simple. You can view the source code in my GitHub repository here.\nPatches Below is a list of all the patches I have installed with a short explanation of each patch, press the links to view the patches on suckless.org.\nalwayscenter: “All floating windows are centered, like the center patch, but without a rule.”\nattachbottom: “New clients attach at the bottom of the stack instead of the top.”\ncenter first window: Adds rule to center window if it is the only client in a tag.\ncfacts: Provides the ability to assign weights to clients to modify how the space in the stacks is distributed between the clients.\ncursorwarp: “Warp the cursor to the center of the target window when switching between them with focusstack(), focusmon(), manage() and unmanage()”\nexitmenu: “Simple exit menu for dwm.”\nhide vacant tags: “This patch prevents dwm from drawing tags with no clients (i.e. vacant) on the bar.”\nmovestack: “This plugin allows you to move clients around in the stack and swap them with the master. It emulates the behavior off mod+shift+j and mod+shift+k in Xmonad.”\nresizecorners: “By default, windows can only be resized from the bottom right corner. With this Patch, the mouse is warped to the nearest corner and you resize it from there.”\nrestartsig: Allows restarting of dwm.\nscratchpad: “The scratchpad patch allows you to spawn or restore a floating terminal window. It is usually useful to have one to do some short typing.”\nsplitstatus: “This patch replaces the standard statusbar items (window name to the right of the tags, and status on the right) with two status items: one in the centre, and one on the right.”\nswallow: Terminals swallow windows opened by child processes.\ntilewide: “The tilewide layout is a variant of the standard tile layout. Windows added to the master area will be positioned side by side, instead of one on top of the other. This makes better use of screen space on ultra wide monitors.”\nviewontag: “Follow a window to the tag it is being moved to.”\nOther Changes font\ncolor\nrules\nXF86XK\nkeys\nKeybinds Applications Super + p: Spawn dmenu Super + Ret: Spawn st Super + s: Spawn scratchpad Super + b: Spawn Bitwarden-menu Super + w: Spawn qutebrowser Clients and Areas Super + j: Focus next client Super + k: Focus previous client Super + i: Increase number of master clients Super + d: Decrease number of master clients Super + h: Decrease master area size Super + l: Increase master area size Super + Shift + h: Increase client weight Super + Shift + l: Decrease client weight Super + Shift + o: Reset client weight Super + Shift + j: Swap client with next client Super + Shift + k: Swap client with previous client Super + Shift + Space: Toggle client to floating Super + Shift + Return: Zoom client to master area Super + q: Kill client Layout Super + t: Set tilewide layout Super + Shift + t: Set tile layout Super + f: Set floating layout Super + m: Set monocle layout Super + Space: Toggle previous layout Super + Shift + b: Toggle the bar Tags and Monitors Super + Tab: View previous tag\nSuper + 0: View all tags\nSuper + Shift + 0: Move client to all tags\nSuper + ,: Focus previous monitor\nSuper + .: Focus next monitor\nSuper + Shift ,: Move client to previous monitor\nSuper + Shift .: Move client to next monitor\nSuper + 1-9: View tag 1-9\nSuper + Shift + 1-9: Send client to tag 1-9\nSuper + Control + 1-9: Add tag 1-9 to view\nSuper + Shift + Control + 1-9: Add client to tag 1-9\nOther Super + Shift + q: Open exit menu Install Dependencies libX11 libXinerama libXft fira-code-nerdfont NixOS Add this repo as a flake input in your flake.nix:\ninputs = { dwm = { url = \"github:jonwin1/dwm-jonwin\"; inputs.nixpkgs.follows = \"nixpkgs\"; }; }; Then add the following to your configuration.nix to enable dwm:\nservices = { xserver = { windowManager.dwm = { enable = true; package = inputs.dwm.packages.\"x86_64-linux\".default; }; }; }; Running dwm Other Distros Edit config.mk to match your local setup (dwm is installed into the /usr/local namespace by default).\nAfterwards enter the following command to build and install dwm (if necessary as root):\nmake clean install Running dwm Add the following line to your .xinitrc to start dwm using startx:\nexec dwm In order to connect dwm to a specific display, make sure that the DISPLAY environment variable is set correctly, e.g.:\nDISPLAY=foo.bar:1 exec dwm (This will start dwm on display :1 of the host foo.bar.)\nIn order to display status info in the bar, you can do something like this in your .xinitrc:\nwhile xsetroot -name \"`date` `uptime | sed 's/.*,//'`\" do sleep 1 done \u0026 exec dwm ",
+  "wordCount" : "862",
   "inLanguage": "en",
   "image":"http://localhost:1313/dwm.png","datePublished": "2024-05-20T14:59:07+02:00",
-  "dateModified": "2024-05-20T14:59:07+02:00",
+  "dateModified": "2024-05-21T19:34:25+02:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "http://localhost:1313/posts/dwm/"
@@ -194,7 +188,7 @@ center first window: Adds rule to center window if it is the only client in a ta
       </span>
     </h1>
     <div class="post-meta">
-<span title='2024-05-20 14:59:07 +0200 CEST'>2024-05-20</span>&nbsp;·&nbsp;3 min&nbsp;|&nbsp;<a href="https://github.com/jonwin1/website/blob/main/content/posts/dwm.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+<span title='2024-05-20 14:59:07 +0200 CEST'>2024-05-20</span>&nbsp;·&nbsp;<span title='2024-05-21 19:34:25 +0200 CEST'>(updated 2024-05-21)</span>&nbsp;·&nbsp;5 min&nbsp;|&nbsp;<a href="https://github.com/jonwin1/website/blob/main/content/posts/dwm.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
 
 </div>
   </header> 
@@ -208,9 +202,27 @@ center first window: Adds rule to center window if it is the only client in a ta
 
         <div class="inner"><ul>
                 <li>
-                    <a href="#patches" aria-label="Patches">Patches</a></li>
+                    <a href="#patches" aria-label="Patches">Patches</a><ul>
+                        
                 <li>
-                    <a href="#keybinds" aria-label="Keybinds">Keybinds</a></li>
+                    <a href="#other-changes" aria-label="Other Changes">Other Changes</a></li></ul>
+                </li>
+                <li>
+                    <a href="#keybinds" aria-label="Keybinds">Keybinds</a><ul>
+                        <ul>
+                        
+                <li>
+                    <a href="#applications" aria-label="Applications">Applications</a></li>
+                <li>
+                    <a href="#clients-and-areas" aria-label="Clients and Areas">Clients and Areas</a></li>
+                <li>
+                    <a href="#layout" aria-label="Layout">Layout</a></li>
+                <li>
+                    <a href="#tags-and-monitors" aria-label="Tags and Monitors">Tags and Monitors</a></li>
+                <li>
+                    <a href="#other" aria-label="Other">Other</a></li></ul>
+                    </ul>
+                </li>
                 <li>
                     <a href="#install" aria-label="Install">Install</a><ul>
                         
@@ -239,8 +251,15 @@ center first window: Adds rule to center window if it is the only client in a ta
 
   <div class="post-content"><p>&ldquo;dwm is an extremely fast, small, and dynamic window manager for X.&rdquo; -
 <a href="https://dwm.suckless.org/">suckless.org</a></p>
-<p>This post talks about my dwm configuration and the changes I have made to it.</p>
+<p>This post talks about my dwm configuration and the changes I have made to it. I
+have installed quite a few patches and made some modifications of my own, I
+have also added a flake.nix to make installation on NixOS really simple. You
+can view the source code in my GitHub repository
+<a href="https://github.com/jonwin1/dwm-jonwin">here</a>.</p>
 <h2 id="patches">Patches<a hidden class="anchor" aria-hidden="true" href="#patches">#</a></h2>
+<p>Below is a list of all the patches I have installed with a short explanation of
+each patch, press the links to view the patches on
+<a href="https://dwm.suckless.org/patches/">suckless.org</a>.</p>
 <ul>
 <li>
 <p><strong><a href="https://dwm.suckless.org/patches/alwayscenter/">alwayscenter</a>:</strong> &ldquo;All
@@ -314,10 +333,95 @@ makes better use of screen space on ultra wide monitors.&rdquo;</p>
 window to the tag it is being moved to.&rdquo;</p>
 </li>
 </ul>
+<h3 id="other-changes">Other Changes<a hidden class="anchor" aria-hidden="true" href="#other-changes">#</a></h3>
+<p>font</p>
+<p>color</p>
+<p>rules</p>
+<p>XF86XK</p>
+<p>keys</p>
 <h2 id="keybinds">Keybinds<a hidden class="anchor" aria-hidden="true" href="#keybinds">#</a></h2>
+<h4 id="applications">Applications<a hidden class="anchor" aria-hidden="true" href="#applications">#</a></h4>
+<ul>
+<li><code>Super + p</code>: Spawn dmenu</li>
+<li><code>Super + Ret</code>: Spawn st</li>
+<li><code>Super + s</code>: Spawn scratchpad</li>
+<li><code>Super + b</code>: Spawn Bitwarden-menu</li>
+<li><code>Super + w</code>: Spawn qutebrowser</li>
+</ul>
+<h4 id="clients-and-areas">Clients and Areas<a hidden class="anchor" aria-hidden="true" href="#clients-and-areas">#</a></h4>
+<ul>
+<li><code>Super + j</code>: Focus next client</li>
+<li><code>Super + k</code>: Focus previous client</li>
+<li><code>Super + i</code>: Increase number of master clients</li>
+<li><code>Super + d</code>: Decrease number of master clients</li>
+<li><code>Super + h</code>: Decrease master area size</li>
+<li><code>Super + l</code>: Increase master area size</li>
+<li><code>Super + Shift + h</code>: Increase client weight</li>
+<li><code>Super + Shift + l</code>: Decrease client weight</li>
+<li><code>Super + Shift + o</code>: Reset client weight</li>
+<li><code>Super + Shift + j</code>: Swap client with next client</li>
+<li><code>Super + Shift + k</code>: Swap client with previous client</li>
+<li><code>Super + Shift + Space</code>: Toggle client to floating</li>
+<li><code>Super + Shift + Return</code>: Zoom client to master area</li>
+<li><code>Super + q</code>: Kill client</li>
+</ul>
+<h4 id="layout">Layout<a hidden class="anchor" aria-hidden="true" href="#layout">#</a></h4>
+<ul>
+<li><code>Super + t</code>: Set tilewide layout</li>
+<li><code>Super + Shift + t</code>: Set tile layout</li>
+<li><code>Super + f</code>: Set floating layout</li>
+<li><code>Super + m</code>: Set monocle layout</li>
+<li><code>Super + Space</code>: Toggle previous layout</li>
+<li><code>Super + Shift + b</code>: Toggle the bar</li>
+</ul>
+<h4 id="tags-and-monitors">Tags and Monitors<a hidden class="anchor" aria-hidden="true" href="#tags-and-monitors">#</a></h4>
+<ul>
+<li>
+<p><code>Super + Tab</code>: View previous tag</p>
+</li>
+<li>
+<p><code>Super + 0</code>: View all tags</p>
+</li>
+<li>
+<p><code>Super + Shift + 0</code>: Move client to all tags</p>
+</li>
+<li>
+<p><code>Super + ,</code>: Focus previous monitor</p>
+</li>
+<li>
+<p><code>Super + .</code>: Focus next monitor</p>
+</li>
+<li>
+<p><code>Super + Shift ,</code>: Move client to previous monitor</p>
+</li>
+<li>
+<p><code>Super + Shift .</code>: Move client to next monitor</p>
+</li>
+<li>
+<p><code>Super + 1-9</code>: View tag 1-9</p>
+</li>
+<li>
+<p><code>Super + Shift + 1-9</code>: Send client to tag 1-9</p>
+</li>
+<li>
+<p><code>Super + Control + 1-9</code>: Add tag 1-9 to view</p>
+</li>
+<li>
+<p><code>Super + Shift + Control + 1-9</code>: Add client to tag 1-9</p>
+</li>
+</ul>
+<h4 id="other">Other<a hidden class="anchor" aria-hidden="true" href="#other">#</a></h4>
+<ul>
+<li><code>Super + Shift + q</code>: Open exit menu</li>
+</ul>
 <h2 id="install">Install<a hidden class="anchor" aria-hidden="true" href="#install">#</a></h2>
 <h3 id="dependencies">Dependencies<a hidden class="anchor" aria-hidden="true" href="#dependencies">#</a></h3>
-<p>In order to build dwm you need the Xlib header files.</p>
+<ul>
+<li>libX11</li>
+<li>libXinerama</li>
+<li>libXft</li>
+<li>fira-code-nerdfont</li>
+</ul>
 <h3 id="nixos">NixOS<a hidden class="anchor" aria-hidden="true" href="#nixos">#</a></h3>
 <p>Add this repo as a flake input in your flake.nix:</p>
 <pre><code>inputs = {

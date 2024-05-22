@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- 0.125.4</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 20 May 2024 14:59:07 +0200</lastBuildDate>
+    <lastBuildDate>Tue, 21 May 2024 19:34:25 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dwm (dynamic window manager)</title>
@@ -19,8 +19,10 @@
       <pubDate>Mon, 20 May 2024 14:59:07 +0200</pubDate>
       <guid>http://localhost:1313/posts/dwm/</guid>
       <description>&amp;ldquo;dwm is an extremely fast, small, and dynamic window manager for X.&amp;rdquo; - suckless.org
-This post talks about my dwm configuration.
-Try My Config Patches alwayscenter: All floating windows are centered. attachbottom: New clients attach at the bottom of the stack instead of the top. center first window: Center window if only one window is open. exitmenu: Simple exit menu for dwm. fancybar: Show title of all visible windows. flextile&amp;hellip;: Patch containing custom versions of the following patches: flextile: A flexible layout.</description>
+This post talks about my dwm configuration and the changes I have made to it.
+Patches alwayscenter: &amp;ldquo;All floating windows are centered, like the center patch, but without a rule.&amp;rdquo;
+attachbottom: &amp;ldquo;New clients attach at the bottom of the stack instead of the top.&amp;rdquo;
+center first window: Adds rule to center window if it is the only client in a tag.</description>
     </item>
     <item>
       <title>Keyboard Layouts</title>
