@@ -11,7 +11,7 @@
     </image>
     <generator>Hugo -- 0.125.4</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 May 2024 19:34:25 +0200</lastBuildDate>
+    <lastBuildDate>Wed, 22 May 2024 18:52:41 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Dwm (dynamic window manager)</title>
@@ -19,10 +19,8 @@
       <pubDate>Mon, 20 May 2024 14:59:07 +0200</pubDate>
       <guid>http://localhost:1313/posts/dwm/</guid>
       <description>&amp;ldquo;dwm is an extremely fast, small, and dynamic window manager for X.&amp;rdquo; - suckless.org
-This post talks about my dwm configuration and the changes I have made to it.
-Patches alwayscenter: &amp;ldquo;All floating windows are centered, like the center patch, but without a rule.&amp;rdquo;
-attachbottom: &amp;ldquo;New clients attach at the bottom of the stack instead of the top.&amp;rdquo;
-center first window: Adds rule to center window if it is the only client in a tag.</description>
+This post talks about my dwm configuration and the changes I have made to it. I have installed quite a few patches and made some modifications of my own, I have also added a flake.nix to make installation on NixOS really simple. You can view the source code in my GitHub repository here.
+Patches Below is a list of all the patches I have installed with a short explanation of each patch, press the links to view the patches on suckless.</description>
     </item>
     <item>
       <title>Keyboard Layouts</title>

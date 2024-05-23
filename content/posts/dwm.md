@@ -106,7 +106,7 @@ keys
 - `Super + j`: Focus next client
 - `Super + k`: Focus previous client
 - `Super + i`: Increase number of master clients
-- `Super + d`: Decrease number of master clients
+- `Super + u`: Decrease number of master clients
 - `Super + h`: Decrease master area size
 - `Super + l`: Increase master area size
 - `Super + Shift + h`: Increase client weight
@@ -155,6 +155,8 @@ keys
 - libXft
 - fira-code-nerdfont
 
+**Note:** On NixOS dependencies are automatically installed.
+
 ### NixOS
 
 Add this repo as a flake input in your flake.nix:
@@ -177,9 +179,24 @@ Then add the following to your configuration.nix to enable dwm:
         };
     };
 
+Rebuild your NixOS and after a reboot dwm should be available as a window
+manager.
+
+Configurations updates can easily be installed by updating the flake lock and
+rebuilding. Run the following to only update the dwm flake input:
+
+    nix flake lock --update-input dwm
+
 #### Running dwm
 
+Dwm should automatically be started when you login to your computer or have
+been added as an option in your login manager.
+
 ### Other Distros
+
+The following is taken from the dwm
+[README](https://git.suckless.org/dwm/file/README.html) and should work on most
+Linux distributions.
 
 Edit config.mk to match your local setup (dwm is installed into
 the /usr/local namespace by default).
