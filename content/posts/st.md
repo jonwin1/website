@@ -70,7 +70,7 @@ nerd font icons. I have also changed the colors to colors from the [Nord theme](
 - `alt + l`: Copy url above
 - `alt + shift + l`: Copy url below
 - `alt + o`: Open url in clipboard in default browser
-- `alt + shift + return`: Spawn new terminal in current directory
+- `alt + s`: Spawn new terminal in current directory
 
 Mouse wheel scrolling is also added.
 
