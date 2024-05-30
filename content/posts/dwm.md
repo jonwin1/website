@@ -1,7 +1,7 @@
 ---
-title: 'Dwm (dynamic window manager)'
-date: 2024-05-20T14:59:07+02:00
-draft: true
+title: 'DWM (Dynamic Window Manager)'
+date: 2024-05-30T14:40:11+02:00
+draft: false
 cover:
     image: "dwm.png"
     alt: "Picture of my dwm"
@@ -20,7 +20,7 @@ can view the source code in my GitHub repository
 ## Patches
 
 Below is a list of all the patches I have installed with a short explanation of
-each patch, press the links to view the patches on
+each patch, click the links to view the patches on
 [suckless.org](https://dwm.suckless.org/patches/).
 
 - **[alwayscenter](https://dwm.suckless.org/patches/alwayscenter/):** "All
@@ -81,15 +81,12 @@ window to the tag it is being moved to."
 
 ### Other Changes
 
-font
-
-color
-
-rules
-
-XF86XK
-
-keys
+Some other modifications that I have made to my dwm fork is that I have changed
+the font to FiraCode Nerd Font and I have changed the colors to colors inspired
+by the [Nord](https://www.nordtheme.com/) theme. On top of this I have also
+modified the keybindings, see the [keybinds](#keybinds) section below,
+including adding XF86XK keys for controlling volume, brightness, and media
+playback.
 
 ## Keybinds
 
@@ -115,7 +112,7 @@ keys
 - `Super + Shift + j`: Swap client with next client
 - `Super + Shift + k`: Swap client with previous client
 - `Super + Shift + Space`: Toggle client to floating
-- `Super + Shift + Return`: Zoom client to master area
+- `Super + Return`: Zoom client to master area
 - `Super + q`: Kill client
 
 #### Layout
@@ -198,6 +195,8 @@ The following is taken from the dwm
 [README](https://git.suckless.org/dwm/file/README.html) and should work on most
 Linux distributions.
 
+---
+
 Edit config.mk to match your local setup (dwm is installed into
 the /usr/local namespace by default).
 
@@ -227,3 +226,9 @@ like this in your .xinitrc:
     	sleep 1
     done &
     exec dwm
+
+---
+
+**Note:** I would recommend using a tool like slstatus to set your status bar
+instead of xsetroot like suggested above, you can find my slstatus config
+[here](https://github.com/jonwin1/slstatus-jonwin).

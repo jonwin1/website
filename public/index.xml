@@ -11,16 +11,16 @@
     </image>
     <generator>Hugo -- 0.125.4</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 22 May 2024 18:52:41 +0200</lastBuildDate>
+    <lastBuildDate>Thu, 23 May 2024 16:45:34 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Dwm (dynamic window manager)</title>
+      <title>DWM (Dynamic Window Manager)</title>
       <link>http://localhost:1313/posts/dwm/</link>
-      <pubDate>Mon, 20 May 2024 14:59:07 +0200</pubDate>
+      <pubDate>Thu, 30 May 2024 14:40:11 +0200</pubDate>
       <guid>http://localhost:1313/posts/dwm/</guid>
       <description>&amp;ldquo;dwm is an extremely fast, small, and dynamic window manager for X.&amp;rdquo; - suckless.org
 This post talks about my dwm configuration and the changes I have made to it. I have installed quite a few patches and made some modifications of my own, I have also added a flake.nix to make installation on NixOS really simple. You can view the source code in my GitHub repository here.
-Patches Below is a list of all the patches I have installed with a short explanation of each patch, press the links to view the patches on suckless.</description>
+Patches Below is a list of all the patches I have installed with a short explanation of each patch, click the links to view the patches on suckless.</description>
     </item>
     <item>
       <title>Keyboard Layouts</title>

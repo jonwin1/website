@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Dwm (dynamic window manager) | jonwin.se</title>
+<title>DWM (Dynamic Window Manager) | jonwin.se</title>
 <meta name="keywords" content="">
 <meta name="description" content="&ldquo;dwm is an extremely fast, small, and dynamic window manager for X.&rdquo; - suckless.org
 This post talks about my dwm configuration and the changes I have made to it. I have installed quite a few patches and made some modifications of my own, I have also added a flake.nix to make installation on NixOS really simple. You can view the source code in my GitHub repository here.
-Patches Below is a list of all the patches I have installed with a short explanation of each patch, press the links to view the patches on suckless.">
+Patches Below is a list of all the patches I have installed with a short explanation of each patch, click the links to view the patches on suckless.">
 <meta name="author" content="">
 <link rel="canonical" href="http://localhost:1313/posts/dwm/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
@@ -32,22 +32,22 @@ Patches Below is a list of all the patches I have installed with a short explana
 </noscript>
   
 
-<meta property="og:title" content="Dwm (dynamic window manager)" />
+<meta property="og:title" content="DWM (Dynamic Window Manager)" />
 <meta property="og:description" content="&ldquo;dwm is an extremely fast, small, and dynamic window manager for X.&rdquo; - suckless.org
 This post talks about my dwm configuration and the changes I have made to it. I have installed quite a few patches and made some modifications of my own, I have also added a flake.nix to make installation on NixOS really simple. You can view the source code in my GitHub repository here.
-Patches Below is a list of all the patches I have installed with a short explanation of each patch, press the links to view the patches on suckless." />
+Patches Below is a list of all the patches I have installed with a short explanation of each patch, click the links to view the patches on suckless." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://localhost:1313/posts/dwm/" />
 <meta property="og:image" content="http://localhost:1313/dwm.png" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2024-05-20T14:59:07+02:00" />
-<meta property="article:modified_time" content="2024-05-22T18:52:41+02:00" />
+<meta property="article:published_time" content="2024-05-30T14:40:11+02:00" />
+<meta property="article:modified_time" content="2024-05-23T16:45:34+02:00" />
 
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="http://localhost:1313/dwm.png" />
-<meta name="twitter:title" content="Dwm (dynamic window manager)"/>
+<meta name="twitter:title" content="DWM (Dynamic Window Manager)"/>
 <meta name="twitter:description" content="&ldquo;dwm is an extremely fast, small, and dynamic window manager for X.&rdquo; - suckless.org
 This post talks about my dwm configuration and the changes I have made to it. I have installed quite a few patches and made some modifications of my own, I have also added a flake.nix to make installation on NixOS really simple. You can view the source code in my GitHub repository here.
-Patches Below is a list of all the patches I have installed with a short explanation of each patch, press the links to view the patches on suckless."/>
+Patches Below is a list of all the patches I have installed with a short explanation of each patch, click the links to view the patches on suckless."/>
 
 
 <script type="application/ld+json">
@@ -64,7 +64,7 @@ Patches Below is a list of all the patches I have installed with a short explana
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "Dwm (dynamic window manager)",
+      "name": "DWM (Dynamic Window Manager)",
       "item": "http://localhost:1313/posts/dwm/"
     }
   ]
@@ -74,17 +74,17 @@ Patches Below is a list of all the patches I have installed with a short explana
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Dwm (dynamic window manager)",
-  "name": "Dwm (dynamic window manager)",
-  "description": "\u0026ldquo;dwm is an extremely fast, small, and dynamic window manager for X.\u0026rdquo; - suckless.org\nThis post talks about my dwm configuration and the changes I have made to it. I have installed quite a few patches and made some modifications of my own, I have also added a flake.nix to make installation on NixOS really simple. You can view the source code in my GitHub repository here.\nPatches Below is a list of all the patches I have installed with a short explanation of each patch, press the links to view the patches on suckless.",
+  "headline": "DWM (Dynamic Window Manager)",
+  "name": "DWM (Dynamic Window Manager)",
+  "description": "\u0026ldquo;dwm is an extremely fast, small, and dynamic window manager for X.\u0026rdquo; - suckless.org\nThis post talks about my dwm configuration and the changes I have made to it. I have installed quite a few patches and made some modifications of my own, I have also added a flake.nix to make installation on NixOS really simple. You can view the source code in my GitHub repository here.\nPatches Below is a list of all the patches I have installed with a short explanation of each patch, click the links to view the patches on suckless.",
   "keywords": [
     
   ],
-  "articleBody": "“dwm is an extremely fast, small, and dynamic window manager for X.” - suckless.org\nThis post talks about my dwm configuration and the changes I have made to it. I have installed quite a few patches and made some modifications of my own, I have also added a flake.nix to make installation on NixOS really simple. You can view the source code in my GitHub repository here.\nPatches Below is a list of all the patches I have installed with a short explanation of each patch, press the links to view the patches on suckless.org.\nalwayscenter: “All floating windows are centered, like the center patch, but without a rule.”\nattachbottom: “New clients attach at the bottom of the stack instead of the top.”\ncenter first window: Adds rule to center window if it is the only client in a tag.\ncfacts: Provides the ability to assign weights to clients to modify how the space in the stacks is distributed between the clients.\ncursorwarp: “Warp the cursor to the center of the target window when switching between them with focusstack(), focusmon(), manage() and unmanage()”\nexitmenu: “Simple exit menu for dwm.”\nhide vacant tags: “This patch prevents dwm from drawing tags with no clients (i.e. vacant) on the bar.”\nmovestack: “This plugin allows you to move clients around in the stack and swap them with the master. It emulates the behavior off mod+shift+j and mod+shift+k in Xmonad.”\nresizecorners: “By default, windows can only be resized from the bottom right corner. With this Patch, the mouse is warped to the nearest corner and you resize it from there.”\nrestartsig: Allows restarting of dwm.\nscratchpad: “The scratchpad patch allows you to spawn or restore a floating terminal window. It is usually useful to have one to do some short typing.”\nsplitstatus: “This patch replaces the standard statusbar items (window name to the right of the tags, and status on the right) with two status items: one in the centre, and one on the right.”\nswallow: Terminals swallow windows opened by child processes.\ntilewide: “The tilewide layout is a variant of the standard tile layout. Windows added to the master area will be positioned side by side, instead of one on top of the other. This makes better use of screen space on ultra wide monitors.”\nviewontag: “Follow a window to the tag it is being moved to.”\nOther Changes font\ncolor\nrules\nXF86XK\nkeys\nKeybinds Applications Super + d: Spawn dmenu Super + s: Spawn st Super + p: Spawn scratchpad Super + b: Spawn Bitwarden-menu Super + w: Spawn qutebrowser Clients and Areas Super + j: Focus next client Super + k: Focus previous client Super + i: Increase number of master clients Super + u: Decrease number of master clients Super + h: Decrease master area size Super + l: Increase master area size Super + Shift + h: Increase client weight Super + Shift + l: Decrease client weight Super + Shift + o: Reset client weight Super + Shift + j: Swap client with next client Super + Shift + k: Swap client with previous client Super + Shift + Space: Toggle client to floating Super + Shift + Return: Zoom client to master area Super + q: Kill client Layout Super + t: Set tilewide layout Super + Shift + t: Set tile layout Super + f: Set floating layout Super + m: Set monocle layout Super + Space: Toggle previous layout Super + Shift + b: Toggle the bar Tags and Monitors Super + Tab: View previous tag\nSuper + 0: View all tags\nSuper + Shift + 0: Move client to all tags\nSuper + ,: Focus previous monitor\nSuper + .: Focus next monitor\nSuper + Shift ,: Move client to previous monitor\nSuper + Shift .: Move client to next monitor\nSuper + 1-9: View tag 1-9\nSuper + Shift + 1-9: Send client to tag 1-9\nSuper + Control + 1-9: Add tag 1-9 to view\nSuper + Shift + Control + 1-9: Add client to tag 1-9\nOther Super + Shift + q: Open exit menu Install Dependencies libX11 libXinerama libXft fira-code-nerdfont Note: On NixOS dependencies are automatically installed.\nNixOS Add this repo as a flake input in your flake.nix:\ninputs = { dwm = { url = \"github:jonwin1/dwm-jonwin\"; inputs.nixpkgs.follows = \"nixpkgs\"; }; }; Then add the following to your configuration.nix to enable dwm:\nservices = { xserver = { windowManager.dwm = { enable = true; package = inputs.dwm.packages.\"x86_64-linux\".default; }; }; }; Rebuild your NixOS and after a reboot dwm should be available as a window manager.\nConfigurations updates can easily be installed by updating the flake lock and rebuilding. Run the following to only update the dwm flake input:\nnix flake lock --update-input dwm Running dwm Dwm should automatically be started when you login to your computer or have been added as an option in your login manager.\nOther Distros The following is taken from the dwm README and should work on most Linux distributions.\nEdit config.mk to match your local setup (dwm is installed into the /usr/local namespace by default).\nAfterwards enter the following command to build and install dwm (if necessary as root):\nmake clean install Running dwm Add the following line to your .xinitrc to start dwm using startx:\nexec dwm In order to connect dwm to a specific display, make sure that the DISPLAY environment variable is set correctly, e.g.:\nDISPLAY=foo.bar:1 exec dwm (This will start dwm on display :1 of the host foo.bar.)\nIn order to display status info in the bar, you can do something like this in your .xinitrc:\nwhile xsetroot -name \"`date` `uptime | sed 's/.*,//'`\" do sleep 1 done \u0026 exec dwm ",
-  "wordCount" : "949",
+  "articleBody": "“dwm is an extremely fast, small, and dynamic window manager for X.” - suckless.org\nThis post talks about my dwm configuration and the changes I have made to it. I have installed quite a few patches and made some modifications of my own, I have also added a flake.nix to make installation on NixOS really simple. You can view the source code in my GitHub repository here.\nPatches Below is a list of all the patches I have installed with a short explanation of each patch, click the links to view the patches on suckless.org.\nalwayscenter: “All floating windows are centered, like the center patch, but without a rule.”\nattachbottom: “New clients attach at the bottom of the stack instead of the top.”\ncenter first window: Adds rule to center window if it is the only client in a tag.\ncfacts: Provides the ability to assign weights to clients to modify how the space in the stacks is distributed between the clients.\ncursorwarp: “Warp the cursor to the center of the target window when switching between them with focusstack(), focusmon(), manage() and unmanage()”\nexitmenu: “Simple exit menu for dwm.”\nhide vacant tags: “This patch prevents dwm from drawing tags with no clients (i.e. vacant) on the bar.”\nmovestack: “This plugin allows you to move clients around in the stack and swap them with the master. It emulates the behavior off mod+shift+j and mod+shift+k in Xmonad.”\nresizecorners: “By default, windows can only be resized from the bottom right corner. With this Patch, the mouse is warped to the nearest corner and you resize it from there.”\nrestartsig: Allows restarting of dwm.\nscratchpad: “The scratchpad patch allows you to spawn or restore a floating terminal window. It is usually useful to have one to do some short typing.”\nsplitstatus: “This patch replaces the standard statusbar items (window name to the right of the tags, and status on the right) with two status items: one in the centre, and one on the right.”\nswallow: Terminals swallow windows opened by child processes.\ntilewide: “The tilewide layout is a variant of the standard tile layout. Windows added to the master area will be positioned side by side, instead of one on top of the other. This makes better use of screen space on ultra wide monitors.”\nviewontag: “Follow a window to the tag it is being moved to.”\nOther Changes Some other modifications that I have made to my dwm fork is that I have changed the font to FiraCode Nerd Font and I have changed the colors to colors inspired by the Nord theme. On top of this I have also modified the keybindings, see the keybinds section below, including adding XF86XK keys for controlling volume, brightness, and media playback.\nKeybinds Applications Super + d: Spawn dmenu Super + s: Spawn st Super + p: Spawn scratchpad Super + b: Spawn Bitwarden-menu Super + w: Spawn qutebrowser Clients and Areas Super + j: Focus next client Super + k: Focus previous client Super + i: Increase number of master clients Super + u: Decrease number of master clients Super + h: Decrease master area size Super + l: Increase master area size Super + Shift + h: Increase client weight Super + Shift + l: Decrease client weight Super + Shift + o: Reset client weight Super + Shift + j: Swap client with next client Super + Shift + k: Swap client with previous client Super + Shift + Space: Toggle client to floating Super + Return: Zoom client to master area Super + q: Kill client Layout Super + t: Set tilewide layout Super + Shift + t: Set tile layout Super + f: Set floating layout Super + m: Set monocle layout Super + Space: Toggle previous layout Super + Shift + b: Toggle the bar Tags and Monitors Super + Tab: View previous tag\nSuper + 0: View all tags\nSuper + Shift + 0: Move client to all tags\nSuper + ,: Focus previous monitor\nSuper + .: Focus next monitor\nSuper + Shift ,: Move client to previous monitor\nSuper + Shift .: Move client to next monitor\nSuper + 1-9: View tag 1-9\nSuper + Shift + 1-9: Send client to tag 1-9\nSuper + Control + 1-9: Add tag 1-9 to view\nSuper + Shift + Control + 1-9: Add client to tag 1-9\nOther Super + Shift + q: Open exit menu Install Dependencies libX11 libXinerama libXft fira-code-nerdfont Note: On NixOS dependencies are automatically installed.\nNixOS Add this repo as a flake input in your flake.nix:\ninputs = { dwm = { url = \"github:jonwin1/dwm-jonwin\"; inputs.nixpkgs.follows = \"nixpkgs\"; }; }; Then add the following to your configuration.nix to enable dwm:\nservices = { xserver = { windowManager.dwm = { enable = true; package = inputs.dwm.packages.\"x86_64-linux\".default; }; }; }; Rebuild your NixOS and after a reboot dwm should be available as a window manager.\nConfigurations updates can easily be installed by updating the flake lock and rebuilding. Run the following to only update the dwm flake input:\nnix flake lock --update-input dwm Running dwm Dwm should automatically be started when you login to your computer or have been added as an option in your login manager.\nOther Distros The following is taken from the dwm README and should work on most Linux distributions.\nEdit config.mk to match your local setup (dwm is installed into the /usr/local namespace by default).\nAfterwards enter the following command to build and install dwm (if necessary as root):\nmake clean install Running dwm Add the following line to your .xinitrc to start dwm using startx:\nexec dwm In order to connect dwm to a specific display, make sure that the DISPLAY environment variable is set correctly, e.g.:\nDISPLAY=foo.bar:1 exec dwm (This will start dwm on display :1 of the host foo.bar.)\nIn order to display status info in the bar, you can do something like this in your .xinitrc:\nwhile xsetroot -name \"`date` `uptime | sed 's/.*,//'`\" do sleep 1 done \u0026 exec dwm Note: I would recommend using a tool like slstatus to set your status bar instead of xsetroot like suggested above, you can find my slstatus config here.\n",
+  "wordCount" : "1030",
   "inLanguage": "en",
-  "image":"http://localhost:1313/dwm.png","datePublished": "2024-05-20T14:59:07+02:00",
-  "dateModified": "2024-05-22T18:52:41+02:00",
+  "image":"http://localhost:1313/dwm.png","datePublished": "2024-05-30T14:40:11+02:00",
+  "dateModified": "2024-05-23T16:45:34+02:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "http://localhost:1313/posts/dwm/"
@@ -179,16 +179,10 @@ Patches Below is a list of all the patches I have installed with a short explana
   <header class="post-header">
     <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
-      Dwm (dynamic window manager)
-      <span class="entry-hint" title="Draft">
-        <svg xmlns="http://www.w3.org/2000/svg" height="35" viewBox="0 -960 960 960" fill="currentColor">
-          <path
-            d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-        </svg>
-      </span>
+      DWM (Dynamic Window Manager)
     </h1>
     <div class="post-meta">
-<span title='2024-05-20 14:59:07 +0200 CEST'>2024-05-20</span>&nbsp;·&nbsp;<span title='2024-05-22 18:52:41 +0200 CEST'>(updated 2024-05-22)</span>&nbsp;·&nbsp;5 min&nbsp;|&nbsp;<a href="https://github.com/jonwin1/website/blob/main/content/posts/dwm.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
+<span title='2024-05-30 14:40:11 +0200 CEST'>2024-05-30</span>&nbsp;·&nbsp;<span title='2024-05-23 16:45:34 +0200 CEST'>(updated 2024-05-23)</span>&nbsp;·&nbsp;5 min&nbsp;|&nbsp;<a href="https://github.com/jonwin1/website/blob/main/content/posts/dwm.md" rel="noopener noreferrer" target="_blank">Suggest Changes</a>
 
 </div>
   </header> 
@@ -258,7 +252,7 @@ can view the source code in my GitHub repository
 <a href="https://github.com/jonwin1/dwm-jonwin">here</a>.</p>
 <h2 id="patches">Patches<a hidden class="anchor" aria-hidden="true" href="#patches">#</a></h2>
 <p>Below is a list of all the patches I have installed with a short explanation of
-each patch, press the links to view the patches on
+each patch, click the links to view the patches on
 <a href="https://dwm.suckless.org/patches/">suckless.org</a>.</p>
 <ul>
 <li>
@@ -334,11 +328,12 @@ window to the tag it is being moved to.&rdquo;</p>
 </li>
 </ul>
 <h3 id="other-changes">Other Changes<a hidden class="anchor" aria-hidden="true" href="#other-changes">#</a></h3>
-<p>font</p>
-<p>color</p>
-<p>rules</p>
-<p>XF86XK</p>
-<p>keys</p>
+<p>Some other modifications that I have made to my dwm fork is that I have changed
+the font to FiraCode Nerd Font and I have changed the colors to colors inspired
+by the <a href="https://www.nordtheme.com/">Nord</a> theme. On top of this I have also
+modified the keybindings, see the <a href="#keybinds">keybinds</a> section below,
+including adding XF86XK keys for controlling volume, brightness, and media
+playback.</p>
 <h2 id="keybinds">Keybinds<a hidden class="anchor" aria-hidden="true" href="#keybinds">#</a></h2>
 <h4 id="applications">Applications<a hidden class="anchor" aria-hidden="true" href="#applications">#</a></h4>
 <ul>
@@ -362,7 +357,7 @@ window to the tag it is being moved to.&rdquo;</p>
 <li><code>Super + Shift + j</code>: Swap client with next client</li>
 <li><code>Super + Shift + k</code>: Swap client with previous client</li>
 <li><code>Super + Shift + Space</code>: Toggle client to floating</li>
-<li><code>Super + Shift + Return</code>: Zoom client to master area</li>
+<li><code>Super + Return</code>: Zoom client to master area</li>
 <li><code>Super + q</code>: Kill client</li>
 </ul>
 <h4 id="layout">Layout<a hidden class="anchor" aria-hidden="true" href="#layout">#</a></h4>
@@ -455,6 +450,7 @@ been added as an option in your login manager.</p>
 <p>The following is taken from the dwm
 <a href="https://git.suckless.org/dwm/file/README.html">README</a> and should work on most
 Linux distributions.</p>
+<hr>
 <p>Edit config.mk to match your local setup (dwm is installed into
 the /usr/local namespace by default).</p>
 <p>Afterwards enter the following command to build and install dwm (if
@@ -478,6 +474,10 @@ do
 done &amp;
 exec dwm
 </code></pre>
+<hr>
+<p><strong>Note:</strong> I would recommend using a tool like slstatus to set your status bar
+instead of xsetroot like suggested above, you can find my slstatus config
+<a href="https://github.com/jonwin1/slstatus-jonwin">here</a>.</p>
 
 
   </div>
