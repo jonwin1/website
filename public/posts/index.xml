@@ -11,8 +11,16 @@
     </image>
     <generator>Hugo -- 0.125.4</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 30 May 2024 14:41:14 +0200</lastBuildDate>
+    <lastBuildDate>Mon, 24 Jun 2024 19:51:29 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Keyboard</title>
+      <link>http://localhost:1313/posts/keyboard/</link>
+      <pubDate>Mon, 24 Jun 2024 19:51:29 +0200</pubDate>
+      <guid>http://localhost:1313/posts/keyboard/</guid>
+      <description>I am planing to build a custom split, ergonomic, ortholinear, curved keyboard like the dactyl manuform or charybdis. My keyboard has been configured with the beta version of the Cosmos keyboard configurator found here. I will update this page as my plans change and when I have built it.
+Configuration Right half Left half Components 2 Pro Micro USB-C Controller 62 Kailh Choc Switches 60 1u Kailh Choc Keycaps 2 1u Homing Kailh Choc Keycaps Cirque 40 mm Trackpad Wire for Trackpad OLED 0.</description>
+    </item>
     <item>
       <title>DWM (Dynamic Window Manager)</title>
       <link>http://localhost:1313/posts/dwm/</link>
