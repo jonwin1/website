@@ -15,6 +15,11 @@ layouts the goal has been to create a layout that would work on a
 See the cover picture for how the keys have been moved around to make the
 latest layout work on a normal keyboard.
 
+UPDATE: v5.0 and later are made for a custom keyboard generated with the beta
+[Cosmos](https://ryanis.cool/cosmos) keyboard configurator by
+[rianadon](https://github.com/rianadon). See a separate post
+[here](https://jonwin.se/posts/keyboard) about this keyboard.
+
 The layouts have been configured using
 [KMonad](https://github.com/kmonad/kmonad) which allows you to rebind all keys
 on almost any keyboard and add extra functionalities such as multiple layers
@@ -25,6 +30,28 @@ NixOS configuration and can be seen
 Below follows some of the different layouts I have tried and some thoughts
 about them. They are ordered with the most recent version at the top so to get
 the complete picture maybe start from the bottom.
+
+## v5.0
+
+{{<figure src="/keyboard/keyboard-v5.0.jpg" alt="Keyboard v5.0 image" align="center">}}
+
+Change of plans, I have created a new keyboard design replacing my previous
+plans. This new design has a few more keys than the previous and replaces the
+trackball with a trackpad. The overall layout stays largely the same as before
+with some modification to the thumb clusters and shifting of some characters
+like the various brackets. I also moved ctrl and alt to the pinky instead of
+the thumbs. For more details about the keyboard see
+[this](https://jonwin.se/posts/keyboard) post.
+
+
+## v4.6
+
+{{<figure src="/keyboard/keyboard-v4.6.jpg" alt="Keyboard v4.6 image" align="center">}}
+
+A slight modification to the thumb clusters, but otherwise the same as v4.5.
+Having return and the nav layer key as tap-hold on the same key created
+accidental return presses sometimes and having all the modifier keys on the
+same side was suboptimal when needing multiple of them at the same time.
 
 ## v4.5
 
