@@ -43,7 +43,7 @@ params:
     Content: >
       `$ whoami`
       <br>
-      I am a second year student at the Masters of Science Programme in
+      I'm a third year student at the Masters of Science Programme in
       Computing Science and Engineering at Umeå University. Some of my biggest
       interests are software development, Linux, motorcycling, snowmobiling
       and learning new things.
@@ -57,7 +57,10 @@ params:
       <br>
       <br>
       Visit my [GitHub](https://github.com/jonwin1) profile to view the source code for
-      this page and all of my other projects.
+      this page and all of my other projects. 
+      <br>
+      <br>
+      (updated 2024-11-01)
 
 
   socialIcons:
