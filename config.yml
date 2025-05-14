@@ -67,6 +67,9 @@ params:
     - name: github
       title: My GitHub Profile
       url: https://github.com/jonwin1
+    - name: linkedin
+      title: My LinkedIn Profile
+      url: https://www.linkedin.com/in/jonatan-wincent
     - name: email
       title: Contact me
       url: mailto:jonatan.wincent@jonwin.se
