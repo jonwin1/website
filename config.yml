@@ -1,7 +1,7 @@
 baseURL: 'https://jonwin.se/'
 title: jonwin.se
 languageCode: en-us
-paginate: 5
+pagination.pagerSize: 5
 theme: PaperMod
 
 enableInlineShortcodes: true
