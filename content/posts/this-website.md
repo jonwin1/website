@@ -6,6 +6,7 @@ cover:
 date: "2024-05-03T16:27:52+02:00"
 draft: false
 title: This Website
+weight: 2
 ---
 
 I created this website to have a single place to document all my projects and
