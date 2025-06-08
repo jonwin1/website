@@ -47,10 +47,9 @@ to config.yml since many tutorials and examples I looked at used yaml and
 recommended it as easier to read)*. Once the server is started you can open the
 website at the address shown in the therminal, usually [localhost:1313](http://localhost:1313/).
 
-If you intend to use my repo for your own website I recommend removing all files
-from `/content/posts/` and creating your own posts, then remove my pictures from 
-`/content/pictures.md` and `/static/` and replace them with your own. Lastly 
-modify `config.yml` to use your own url, title, homepage content, logo, etc.
+If you intend to use my repo for your own website I recommend removing all
+files from `/content/posts/` and creating your own posts . Lastly modify
+`config.yml` to use your own url, title, homepage content, logo, etc.
 
 For more info on how to create posts and more view the [Hugo documentation](https://gohugo.io/getting-started/),
 some other good sources of information are the [PaperMod wiki](https://github.com/adityatelange/hugo-PaperMod/wiki)

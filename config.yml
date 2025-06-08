@@ -52,8 +52,7 @@ params:
       `$ man jonwin.se`
       <br>
       On this website I intend to document different projects that I work on and 
-      share my thoughts about them. I will also post images that I take on 
-      the [pictures](/pictures) page.
+      share my thoughts about them.
       <br>
       <br>
       Visit my [GitHub](https://github.com/jonwin1) profile to view the source code for
@@ -99,10 +98,6 @@ menu:
     name: Search
     url: /search/
     weight: 20
-  - identifier: pictures
-    name: Pictures
-    url: /pictures/
-    weight: 30
   - identifier: archive
     name: Archive
     url: /archive/
