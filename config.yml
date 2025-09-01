@@ -43,7 +43,7 @@ params:
     Content: >
       `$ whoami`
       <br>
-      I'm a third year student at the Masters of Science Programme in
+      I'm a fourth year student at the Masters of Science Programme in
       Computing Science and Engineering at Umeå University. Some of my biggest
       interests are software development, Linux, motorcycling, snowmobiling
       and learning new things.
@@ -59,7 +59,7 @@ params:
       this page and all of my other projects. 
       <br>
       <br>
-      (updated 2024-11-01)
+      (updated 2025-09-01)
 
 
   socialIcons:
@@ -69,9 +69,6 @@ params:
     - name: linkedin
       title: My LinkedIn Profile
       url: https://www.linkedin.com/in/jonatan-wincent
-    - name: email
-      title: Contact me
-      url: mailto:jonatan.wincent@jonwin.se
 
   assets:
     favicon: "/favicon.ico"
