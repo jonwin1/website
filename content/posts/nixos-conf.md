@@ -5,7 +5,6 @@ draft: false
 cover:
     image: "nixos.png"
     alt: "Screenshot of the WM"
-weight: 1
 ---
 
 Welcome to my NixOS configuration, you can find the repo [here](https://github.com/jonwin1/nixos-jonwin).
